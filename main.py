@@ -35,4 +35,4 @@ model.compile(loss=tf.losses.MeanSquaredError(), optimizer=tf.optimizers.Adam())
 
 model.fit(wine_features, wine_qualities, epochs=100)
 
-print(model.evaluate(wine_features[200:201], wine_qualities[200:201], verbose=2))
+print(model.evaluate(wine_features[200:205], wine_qualities[200:205], verbose=2))
